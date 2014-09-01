@@ -6,7 +6,7 @@
   :dependencies [[clj-http "1.0.0"]]
   :profiles
   {:provided {:dependencies [[org.clojure/clojure "1.6.0"]]}
-   :dev {:dependencies [[com.palletops/discovery-api "0.1.0-SNAPSHOT"]]
+   :dev {:dependencies [[com.palletops/discovery-api "0.1.0"]]
          :source-paths ["dev-src"]
          :resource-paths ["dev-resources"]
          :plugins [[lein-pallet-release "RELEASE"]]}
