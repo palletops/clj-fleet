@@ -3,9 +3,10 @@
   :url "https://github.com/palletops/clj-fleet"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[clj-http "1.0.0"]]
+  :plugins [[com.palletops/discovery-api "0.1.0-SNAPSHOT"]]
   :profiles
-  {:provided {:dependencies [[org.clojure/clojure "1.6.0"]]}
+  {:project [:discovery-api]
+   :provided {:dependencies [[org.clojure/clojure "1.6.0"]]}
    :dev {:dependencies [[com.palletops/discovery-api "0.1.0-SNAPSHOT"]]
          :source-paths ["dev-src"]
          :resource-paths ["dev-resources"]}
