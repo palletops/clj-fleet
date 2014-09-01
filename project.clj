@@ -1,4 +1,4 @@
-(defproject com.palletops/clj-fleet "0.1.0-SNAPSHOT"
+(defproject com.palletops/clj-fleet "0.1.0"
   :description "An API client for Fleet"
   :url "https://github.com/palletops/clj-fleet"
   :license {:name "Eclipse Public License"
@@ -6,9 +6,10 @@
   :dependencies [[clj-http "1.0.0"]]
   :profiles
   {:provided {:dependencies [[org.clojure/clojure "1.6.0"]]}
-   :dev {:dependencies [[com.palletops/discovery-api "0.1.0-SNAPSHOT"]]
+   :dev {:dependencies [[com.palletops/discovery-api "0.1.0"]]
          :source-paths ["dev-src"]
-         :resource-paths ["dev-resources"]}
+         :resource-paths ["dev-resources"]
+         :plugins [[lein-pallet-release "RELEASE"]]}
    :gen {:prep-tasks ^:replace []}}
   :prep-tasks ["generate"  "compile"]
   :aliases {"generate"
