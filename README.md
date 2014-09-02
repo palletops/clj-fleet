@@ -25,6 +25,9 @@ followed by an options map.
 `machine-list`, `unit-list`, `unit-get`, `unit-delete`, `unit-set`,
 `unit-state-list`.
 
+Each function returns a promise, and takes an optional callback as its
+last argument, much like the http-kit client.
+
 ## License
 
 Copyright © 2014 Hugo Duncan
