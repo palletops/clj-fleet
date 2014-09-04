@@ -14,7 +14,7 @@
 
 (defn generate-version
   [version]
-  (let [doc (document-from-resource "discovery/v1-alpha")
+  (let [doc (document-from-resource (str "discovery/" version))
         options {:fn-name-f fleet-fn-name}
         c (api-ns-string
            doc (symbol (str "com.palletops.fleet." version)) options)
@@ -29,8 +29,8 @@
   (doseq [version versions]
     (generate-version version)))
 
-(comment
-  (generate-versions))
-
 (defn -main [& args]
   (generate-versions))
+
+(comment
+  (document-from-resource (str "discovery/v1-alpha")))
