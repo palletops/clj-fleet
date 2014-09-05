@@ -1,4 +1,4 @@
-(defproject com.palletops/clj-fleet "0.2.1-SNAPSHOT"
+(defproject com.palletops/clj-fleet "0.2.1"
   :description "An API client for Fleet"
   :url "https://github.com/palletops/clj-fleet"
   :license {:name "Eclipse Public License"

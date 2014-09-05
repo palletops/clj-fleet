@@ -1,3 +1,7 @@
+## 0.2.1
+
+- Update to discovery-api 0.1.2
+
 ## 0.2.0
 
 - Update to discovery-api 0.1.1
